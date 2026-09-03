@@ -3,7 +3,7 @@
 ## Basic Details
 * **Team Name:** Twinkle Twinkle
 * **Team Members:**
-  * Team Member: Athul Anil - [Saintgits College Of Applied Sciences]
+  * Team Member: Athul Anilkumar - [Saintgits College Of Applied Sciences]
 * * Team member: Sanju C – [Saintgits College Of Applied Sciences]
 
 ## Project Description
@@ -44,16 +44,17 @@ node server.js
 ## Project Documentation
 
 ### Screenshots (Add at least 3)
-![Photo](https://example.com/images/photo.png)
+![Photo](https://github.com/athul-anilkumar/Doomsday/blob/373c8e79812e47e0b4fc776612a1abc60a8acd0d/Screenshots/Screenshot%202026-09-03%20153847.png)
 
 Main Landing page
 
 
-![Photo](https://example.com/images/photo.png)
+![Photo](https://github.com/athul-anilkumar/Doomsday/blob/b282756c8131f9efbeb226ca6f127ee74101d610/Screenshots/Screenshot%202026-09-03%20150729.png)
 
 Searching for Events
 
-![Photo](https://example.com/images/photo.png)
+![Photo](https://github.com/athul-anilkumar/Doomsday/blob/373c8e79812e47e0b4fc776612a1abc60a8acd0d/Screenshots/Screenshot%202026-09-03%20153942.png)
+![Photo](https://github.com/athul-anilkumar/Doomsday/blob/373c8e79812e47e0b4fc776612a1abc60a8acd0d/Screenshots/Screenshot%202026-09-03%20154053.png)
 Output Page
 
 ### Diagrams
