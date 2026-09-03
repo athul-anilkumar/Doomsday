@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Date - Synchronized Misfortune</title>
+    <meta name="description"
+        content="Discover the horrifying accidents and events that occurred on the date and time of your birth.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="torch" id="torch"></div>
+    <div class="custom-cursor"></div>
+    <div class="scanlines"></div>
+    <div class="overlay" id="overlay"></div>
+    <div class="camera-ui">
+        <div class="reticle top-left"></div>
+        <div class="reticle top-right"></div>
+        <div class="reticle bottom-left"></div>
+        <div class="reticle bottom-right"></div>
+
+        <div class="rec-container">
+            <div class="rec-dot"></div>
+            <span>REC</span>
+            <span id="rec-time">00:00:00</span>
+        </div>
+
+        <div class="resolution-text">4k 30fps</div>
+
+        <div class="battery-icon">
+            <div class="battery-body">
+                <div class="battery-level"></div>
+            </div>
+            <div class="battery-tip"></div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>DOOMSDAY</h1>
+            <p>Your timeline was woven with tragedy. Find out what.</p>
+        </header>
+
+        <main>
+            <form id="doom-form">
+                <div class="input-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" id="birthDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthTime">Time of Birth (Optional)</label>
+                    <input type="time" id="birthTime">
+                </div>
+                <button type="submit" class="btn" id="submit-btn">
+                    <span>Uncover My Doom</span>
+                </button>
+            </form>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Consulting the cosmic records...</p>
+            </div>
+
+            <div id="result" class="hidden">
+                <div class="doom-score">
+                    <h2>Doom Synchronization</h2>
+                    <div class="score-circle">
+                        <span id="score-value">0%</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Synchronized Event (<span id="event-year"></span>)</h3>
+                    <img id="event-image" class="hidden" src="" alt="Event documentation"
+                        style="width: 100%; height: auto; border: 2px solid #fff; margin-bottom: 1rem; filter: grayscale(100%) contrast(1.5);">
+                    <p id="event-description"></p>
+                    <a id="event-link" href="#" target="_blank" class="hidden">Read more about this tragedy</a>
+                </div>
+                <div class="warning">
+                    <p id="warning-message"></p>
+                </div>
+                <div id="elapsed-timer-container" class="elapsed-timer hidden">
+                    <h3>Time Elapsed Since Tragedy</h3>
+                    <div id="elapsed-time">00:00:00:00</div>
+                </div>
+                <button id="reset-btn" class="btn secondary">Try Another Soul</button>
+            </div>
+        </main>
+        <div id="wasted-overlay" class="hidden">
+            <p id="wasted-text"></p>
+        </div>
+
+        <audio id="bgm" loop src="bgm.mp3"></audio>
+        <script src="script.js"></script>
+</body>
+
+</html>
